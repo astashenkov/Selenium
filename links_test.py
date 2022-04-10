@@ -1,5 +1,4 @@
 from selenium import webdriver
-from selenium.webdriver.common.by import By
 import time
 import math
 
@@ -23,7 +22,7 @@ try:
 
     country = browser.find_element_by_id('country')
     country.send_keys('Sweden')
-    
+
     button = browser.find_element_by_class_name('btn')
     button.click()
 
