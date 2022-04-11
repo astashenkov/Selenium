@@ -4,13 +4,20 @@ import time
 
 try:
     browser = webdriver.Chrome()
-    browser.get('http://suninjuly.github.io/registration1.html')
+    page = 'http://suninjuly.github.io/registration1.html'
+    browser.get(page)
 
-    inputs = browser.find_elements(By.CSS_SELECTOR, '.first_block input')
-    for input in inputs:
-        input.send_keys('Add some text')
+    input_name = browser.find_element_by_css_selector('input[placeholder="Input your first name"]')
+    input_surname = browser.find_element_by_css_selector('input[placeholder="Input your last name"]')
+    input_email = browser.find_element_by_css_selector('input[placeholder="Input your email"]')
 
-    button = browser.find_element_by_class_name('btn')
+    input_name.send_keys('Add some name')
+    input_surname.send_keys('Add some surname')
+    input_email.send_keys('Add some email')
+
+    time.sleep(5)
+
+    button = browser.find_element_by_css_selector('button[type="submit"]')
     button.click()
 
     title = browser.find_element_by_name('h1')
@@ -18,5 +25,5 @@ try:
 
 
 finally:
-    time.sleep(10)
+    time.sleep(5)
     browser.quit()
