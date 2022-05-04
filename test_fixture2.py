@@ -4,14 +4,19 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 
 
+@pytest.fixture(autouse=True)
+def message():
+    print('Has been used "autouse" parameter')
+
+
 @pytest.fixture
 def browser():
     browser = webdriver.Chrome()
     link = 'https://www.google.com/'
     browser.get(link)
     yield browser
-    time.sleep(10)
-    print('Test has done.')
+    time.sleep(5)
+    print('Test has been done.')
     browser.quit()
 
 
