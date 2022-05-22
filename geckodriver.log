@@ -1,0 +1,30 @@
+1651780339659	geckodriver	INFO	Listening on 127.0.0.1:65276
+1651780339764	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "65277" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/fw/9_nc8szd1mxfg433tl1t79mr0000gn/T/rust_mozprofile7MIRCZ"
+2022-05-05 22:52:20.035 plugin-container[47201:1815091] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-05-05 22:52:20.035 plugin-container[47201:1815091] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-05-05 22:52:20.039 plugin-container[47201:1815091] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-05-05 22:52:20.039 plugin-container[47201:1815091] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-05-05 22:52:20.040 plugin-container[47201:1815116] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-05-05 22:52:20.040 plugin-container[47201:1815116] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1651780340040	Marionette	INFO	Marionette enabled
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/fw/9_nc8szd1mxfg433tl1t79mr0000gn/T/rust_mozprofile7MIRCZ/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:65277/devtools/browser/4ee760b0-0dff-42f5-93da-76a0c72431a8
+1651780341171	Marionette	INFO	Listening on port 65288
+Read port: 65288
+1651780341242	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://stepik.azureedge.net/static/frontend-build/vendor.js?v=1651668784, line 6289: unreachable code after return statement
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 18: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://stepik.azureedge.net/static/frontend-build/vendor.js?v=1651668784, line 6105: Error: Expected: '<assignment:568645>' to be present in the adapter provided payload, but it was not found.
+1651780366912	Marionette	INFO	Stopped listening on port 65288
+
+###!!! [Child][PContentChild] Error: Send(msgname=PHttpChannel::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
